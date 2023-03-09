@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Udemy Course Price Checker Results</title>
+  </head>
+  <body>
+    <h1>Udemy Course Price Checker Results</h1>
+    <table>
+      <tr>
+        <th>URL</th>
+        <th>Price</th>
+      </tr>
+      {% for course in courses %}
+      <tr>
+        <td>{{ course.url }}</td>
+        <td>{{ course.price }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
